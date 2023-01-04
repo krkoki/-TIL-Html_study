@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>입력 양식</title>
+    <link rel="stylesheet" href="css/form2.css" />
+    <style>
+        table {
+          border: 1px solid #444444;
+        }
+        td,
+        th {
+          border: 1px solid #444444;
+          padding: 10px;
+          text-align: center;
+        }
+      </style>    
+</head>
+<body>
+    <h3>입력 양식</h3>
+    <hr />
+    <table>
+        <tr>
+            <td colspan="3">텍스트</td>
+            <td colspan="10"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="3">텍스트</td>
+            <td colspan="10"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="3">히든</td>
+            <td colspan="10"></td>
+        </tr>
+        <tr>
+            <td colspan="3">체크박스</td>
+            <td colspan="10">
+                <label><input type="checkbox" value="a" />사과</label>
+                <label><input type="checkbox" value="g" />포도</label>
+                <label><input type="checkbox" value="c" />참외</label>
+                <label><input type="checkbox" value="w" />수박</label>              
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">셀렉트</td>
+            <td colspan="10">
+                <select>
+                    <option value="gim">김밥</option>
+                    <option value="ddu">떡볶이</option>
+                    <option value="sun">순대</option>
+                    <option value="eho">어묵</option>
+                </select>             
+            </td>            
+        </tr>
+                <tr>
+            <td colspan="3">라디오</td>
+            <td colspan="10">
+                <label><input type="radio" name="sex" value="yes" />남자</label>
+                <label><input type="radio" name="sex" value="no" />여자</label>           
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">Textarea</td>
+            <td colspan="10">
+                <label for="memo"><textarea id="memo" cols="40" rows="10"></textarea> </label>           
+            </td>
+        </tr>        
+    </table>
+
+    
+</body>
+</html>

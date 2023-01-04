@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>레드향 주문하기</title>
+  </head>
+  <body>
+    <h1>레드향 주문하기</h1>
+    <form>
+      <fieldset>
+        <legend>상품선택하기</legend>
+        <p><b>주문할 상품을 선택해주세요</b></p>
+        <select>
+          <option value="s-3" selected>선물용 3kg</option>
+          <option value="s-5">선물용 5kg</option>
+          <option value="f-3">가정용 3kg</option>
+          <option value="f-5">가정용 5kg</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>상품선택하기</legend>
+        <p><b>주문할 상품을 선택해주세요</b></p>
+        <label>
+            <input type="text" list="goods">
+        </label>
+        <datalist id="goods">
+          <option value="s-3" selected>선물용 3kg</option>
+          <option value="s-5">선물용 5kg</option>
+          <option value="f-3">가정용 3kg</option>
+          <option value="f-5">가정용 5kg</option>
+        </datalist>
+      </fieldset>
+    </form>
+  </body>
+</html>
