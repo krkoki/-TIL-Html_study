@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>입력 양식</title>
-    <link rel="stylesheet" href="css/form2.css" />
+    <!-- <link rel="stylesheet" href="css/form2.css" /> -->
     <style>
         table {
           border: 1px solid #444444;
@@ -12,7 +12,7 @@
         th {
           border: 1px solid #444444;
           padding: 10px;
-          text-align: center;
+          text-align: left;
         }
       </style>    
 </head>
@@ -22,29 +22,43 @@
     <table>
         <tr>
             <td colspan="3">텍스트</td>
-            <td colspan="10"><input type="text"></td>
+            <td colspan="10"><input type="text" name="n" id="n"></td>
         </tr>
         <tr>
-            <td colspan="3">텍스트</td>
-            <td colspan="10"><input type="text"></td>
+            <td colspan="3">패스워드</td>
+            <td colspan="10"><input type="password" name="p" id="p"></td>
         </tr>
         <tr>
             <td colspan="3">히든</td>
-            <td colspan="10"></td>
+            <td colspan="10">
+                <input type="hidden" name="url" id="url" value="primary key"></td>
         </tr>
         <tr>
             <td colspan="3">체크박스</td>
             <td colspan="10">
                 <label><input type="checkbox" value="a" />사과</label>
                 <label><input type="checkbox" value="g" />포도</label>
-                <label><input type="checkbox" value="c" />참외</label>
-                <label><input type="checkbox" value="w" />수박</label>              
+                <input type="checkbox" value="c" id="ch"/>
+                <label for="ch">참외</label>
+                <input type="checkbox" value="w"  id="wa"/>
+                <label for="wa">수박</label>              
             </td>
         </tr>
         <tr>
             <td colspan="3">셀렉트</td>
             <td colspan="10">
                 <select>
+                    <option value="gim">김밥</option>
+                    <option value="ddu">떡볶이</option>
+                    <option value="sun">순대</option>
+                    <option value="eho">어묵</option>
+                </select>             
+            </td>            
+        </tr>
+        <tr>
+            <td colspan="3">멀티셀렉트</td>
+            <td colspan="10">
+                <select name="order{}" multiple>
                     <option value="gim">김밥</option>
                     <option value="ddu">떡볶이</option>
                     <option value="sun">순대</option>
@@ -62,11 +76,31 @@
         <tr>
             <td colspan="3">Textarea</td>
             <td colspan="10">
-                <label for="memo"><textarea id="memo" cols="40" rows="10"></textarea> </label>           
+                <label for="memo"><textarea id="memo" cols="50" rows="5"></textarea> </label>           
             </td>
-        </tr>        
-    </table>
+        </tr>
+        <tr>
+            <td colspan="3">파일</td>
+            <td colspan="10"><div class="main">
+                <input type="file">
+              </div></td>
+        </tr>
+        <tr>
+            <td colspan="3">버튼</td>
+            <td colspan="10"><div>
+                <input type="button" value="버튼" onclick="alert('버튼을 클릭하였음')">
+                <input type="submit" value="제출">
+            </div></td>
+        </tr>
+        <tr>
+            <td colspan="13" style="text-align:center"><div>
+                <input type="submit" value="제출">
+                <input type="reset" value="취소">
+              </div></td>
+        </tr>
 
+    </table>
+    
     
 </body>
 </html>

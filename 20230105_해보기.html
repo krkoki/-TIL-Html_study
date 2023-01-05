@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>nufyn 회사 설문조사</title>
+  </head>
+  <body>
+     <h1>nufyn 회사 설문조사</h1>
+      <p><label>이름 : </label>
+      <input
+        type="text"
+        id="user-name"
+        required
+        placeholder="이름을 반드시 입력해주세요"
+      /></p>
+      <p><label>주소 : </label>
+      <input type="text" id="user-addr" value="대구 달서구" required /></p>
+      <p></p><label>회사 : </label>
+      <input type="text" id="company" value="nufyn 회사" /></p>
+      <p><label>성별 : 
+        <input type="radio" name="sex" value="man">남</input>
+        <input type="radio" name="sex" value="woman">여</input>
+    </label></p>
+    <p><label>전화번호 앞자리 : 
+        <input type="radio" name="num" value="etc">기타</input>
+        <input type="radio" name="num" value="010">010</input>
+    </label></p>
+    <p><label>
+        좋아하는 애완 동물은? :
+        <input type="checkbox" name="animal" value="dog">개</input>
+        <input type="checkbox" name="animal" value="cat">고양이</input>
+        <input type="checkbox" name="animal" value="snake">뱀</input>
+        <input type="checkbox" name="animal" value="ant">개미</input>
+    </label></p>
+    <p><label>ID : </label>
+      <input
+        type="text"
+        id="user-id"
+        required
+        placeholder="아이디"
+      /></p>
+    <p><label>PW : </label>
+      <input
+        type="password"
+        id="user-pw"
+        required
+        placeholder="패스워드"
+      /></p>
+      <p><select name="phonenum{}" multiple>
+        <option value="010">010</option>
+        <option value="017">017</option>
+        <option value="016">016</option>
+    </select></p>
+    <p><label for="memo"><textarea id="memo" cols="50" rows="15" placeholder="memo"></textarea> </label></p>
+    <input type="submit" value="보내기">
+  </body>
+</html>
