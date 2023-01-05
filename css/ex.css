@@ -1,0 +1,14 @@
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+  }
+  td,
+  th {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+h1 {
+    color: orangered;
+    font-size: 3.5em;
+    font-style: italic;
+}
