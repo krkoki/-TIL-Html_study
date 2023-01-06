@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    >
+    <title>Display & Float</title>
+    <style>
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        display: inline-block;
+        border: 1px solid #222;
+        padding: 20px;
+        margin: 0 20px;
+      }
+      div{
+        padding: 20px;
+        margin: 10px;
+      }
+      #box1{
+        background: #ffd800 ;
+        float: left;
+      }
+      #box2{
+        background: #0094ff ;
+        float: left;
+      }
+      #box3{
+        background: #00ff21 ;
+        float: left;
+      }
+      #box4{
+        background: #a874ff ;
+        clear: both;       
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>menu 1</li>
+        <li>menu 2</li>
+        <li>menu 3</li>
+        <li>menu 4</li>
+      </ul>
+    </nav>
+    <div id="box1">박스1</div>
+    <div id="box2">박스2</div>
+    <div id="box3">박스3</div>
+    <div id="box4">박스4</div>
+  </body>
+</html>

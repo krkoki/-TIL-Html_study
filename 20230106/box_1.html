@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스속성</title>
+    <style>
+        .a{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            border: thick dashed black;
+            /* margin: 0 30px 0 30px;
+            /* top, right, bottom, left */
+            margin: 0 30px;
+            /* padding: 20px 0 20px 0; */
+            /* top, right, bottom, left */
+            padding: 20px 0;
+        }
+        .c{
+            padding-bottom: 5px;
+            border-bottom: 3px double blue;
+        }
+        .b{
+            padding: 10px;
+            border: 2px solid red;
+            border-radius: 5%;            
+        }
+        .cat{
+        background:url(images/img-20230104T063654Z-001/img/cat.jpg) fixed;
+        width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 250px;
+            padding: 10px 0;
+    }
+    </style>
+</head>
+<body>
+    <h1>박스 속성</h1>
+    <hr />
+    <div class="a">
+    </div>
+    
+    <h1 class="c">박스 모델</h1>
+    <div class="b">
+        박스 모델은 실제 콘텐츠 영역, 박스와 콘텐츠 영역 사이의 여백인 패딩(padding), 박스 테두리(border), 그리고 여러박스 모델 간의 여백인 마진(margin) 등의 요소로 구성되어 있습니다.
+    </div>
+    <div class="cat">고양이</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    width: 300px;
+    border: 1px solid #222;
+    padding: 10px;
+}
+#pos1{
+    position:absolute;
+    left: 50px;
+    top: 50px;
+}
+#pos2{
+    position:absolute;
+    right: 100px;
+    top: 100px;
+}
+#pos3{
+    position:absolute;
+    left: 100px;
+    bottom: 100px;
+}

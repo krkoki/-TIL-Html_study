@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#contents{
+    background: url("../images/img-20230104T063654Z-001/img/cat.jpg") no-repeat;
+    background-size: cover;
+    width: 1800px;
+    height: 1500px;
+    margin: 0 auto;
+    position: relative;
+    background-attachment: fixed;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+    text-shadow: 2px 3px 0 #000;
+    position: absolute;
+    right: 70px;
+    bottom: 50px;
+}

@@ -1,14 +1,31 @@
 table {
-    border: 1px solid #ccc;
+    border: 1px solid #222;
     border-collapse: collapse;
   }
   td,
   th {
-    border: 1px solid #ccc;
+    border: 1px solid #222;
     padding: 10px;
+    text-align: center;
   }
-h1 {
+body{
+  background-color: #222;
+  font-size: 1.5em;
+  font-family: "Nanum Pen Script", cursive;}
+  h1 {
     color: orangered;
-    font-size: 3.5em;
+    font-size: 5em;
     font-style: italic;
+    font-family: "Noto Sans KR", sans-serif;  
 }
+#yeah{
+  background-color: #fff;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+img {
+  max-width: 100%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300&family=Yeon+Sung&display=swap");
+    
