@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>가위바위보</title>
+    <script>
+        var scissor = '가위';
+        var rock = '바위';
+        var paper = '보';
+
+        var win = '이겼다!';
+        var draw = '비겼다.';
+        var lose = '졌다.';
+
+        var mine = prompt("가위 바위 보 중 하나를 입력하세요.");
+
+        let sValue = [scissor, rock, paper];
+        let com = Math.floor(Math.random()*sValue.length);
+
+        if (mine == com){
+            alert(draw)
+        }else{
+            if (mine == scissor){
+                if (com == rock){
+                    alert(lose)
+                }else{
+                    alert(win)
+                }}
+                else if (mine == rock){
+                    if (com == paper){
+                        alert(lose)
+                    }else{
+                        alert(win)
+                    }}
+                else if (mine == paper){
+                    if (com = scissor){
+                        alert(lose)
+                    }else{
+                        alert(win)
+                    }}
+                else{
+                    alert("입력을 잘못하였습니다. 다시 입력해주세요")
+                }
+                }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
