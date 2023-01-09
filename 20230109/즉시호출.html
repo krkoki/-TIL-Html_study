@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>즉시호출</title>
+</head>
+<body>
+    <script>
+        let pi = 3.14;
+        console.log(`파이값은 ${pi} 입니다.`)
+        // 블록을 사용한 스코프 
+        {
+            let pi = 3.141592;
+            console.log(`파이값은 ${pi} 입니다.`) 
+        }
+        console.log(`파이값은 ${pi} 입니다.`)
+
+        // 다른방법으로는 함수 블록을 사용한 스코프
+        function sample(){
+            let pi = 3.141592;
+            console.log(`파이값은 ${pi} 입니다.`) 
+        }
+        sample();
+        console.log(`파이값은 ${pi} 입니다.`)
+    </script>
+</body>
+</html>

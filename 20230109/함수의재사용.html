@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 재사용</title>
+</head>
+<body>
+    <script>
+        // function addNumber(){
+        //     var num1 = 2;
+        //     var num2 = 3;
+        //     sum = num1 + num2;
+        // }
+        // addNumber();
+        // alert("결과값" + sum)
+
+        // // 재사용이 가능하게 만들기
+        // function addNumber(num1, num2){
+        //     var sum = num1 + num2;
+        //     return sum;
+        // }
+        // var result = addNumber(2, 3); // 함수() 괄호값안에 값을 변경하여 재사용 가능
+        // alert("결과값" + result)
+
+
+        // // 매개변수도 인수도 없은 함수를 만들기
+        // (function (){
+        //     var userName = prompt("이름을 입력해주세요.");
+        //     document.write("안녕하세요 " + userName + " 님!");
+        // }());
+
+
+        // // 즉시실행이 가능한 익명함수 만들기
+        // (function addNumber(num1, num2){
+        //     sum = num1 + num2;}(1, 2));
+        //     document.write("실행결과 " + sum);
+
+
+        // 화살표 함수로 만들기
+        // const hi = function(){
+        //     alert("안녕하세요")
+        // }
+        // hi();
+        // 변경후 >>
+        // const hi = () => {alert("반갑습니다.")}
+        // hi();
+
+        // let hi = function(user) {
+        //     document.write(user + "님 안녕하세요")
+        // }
+        // hi("기태")
+        // 변경후 >>
+        // let hi = (user) => document.write(user + "님 안녕하세요")
+        // hi("기태")
+
+        // let sum = function(a,b){
+        //     return a + b;
+        // }
+        // document.write("두수의 합은" +sum(5,6));
+        // 변경후 >>
+        // let sum = (a, b) => (a + b); 
+        // document.write("두수의 합은" +sum(10,23));
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
