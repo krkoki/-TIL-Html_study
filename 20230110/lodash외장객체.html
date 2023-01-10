@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lodash</title>
+    <script src="../js/lodash.js"></script>
+    <script>
+      //데이터를 생성
+      const books = [{
+        name : '파이썬 기초',
+        price : 18000,
+        publisher : '더좋은'
+      }, {
+        name : 'HTML 입문',
+        price : 20000,
+        publisher : '더좋은신촌'
+      }, {
+        name : '머신러닝 기초',
+        price : 10000,
+        publisher : '더신촌'
+      }, {
+        name : '딥러닝 기초',
+        price : 45000,
+        publisher : '더좋촌'
+      }];
+      const output = _.sortBy(books, (book) => book.price); // lodash 외부객체
+      console.log(JSON.stringify(output, null, 2));
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

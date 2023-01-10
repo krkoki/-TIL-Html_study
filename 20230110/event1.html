@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cupevent1</title>
+    <style>
+        #container {
+            width: 300px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="../images/cup-1.png" id="cup">
+    </div>
+    <script>
+        var cup = document.querySelector('#cup');
+        cup.onclick = function(){
+            alert('커피가 매우 뜨겁습니다. 건들지 마세요.')
+        }
+        // cup.onclick = changePic;
+
+        // function changePic(){ // 호이스팅
+        //     cup.src = '../images/img-20230104T063654Z-001/img/cat.jpg'
+        // }
+    </script>
+</body>
+</html>

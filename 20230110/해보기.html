@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>당신의 이름은?</title>
+  </head>
+  <body>
+    <h2><a href="#" onclick="addH();">당신의 이름은 무엇입니까?</a></h2>
+    <hr />
+    <script>
+      function addH() {
+        const newH = document.createElement("h3");
+        newH.classList.add('class명1', 'class명2');
+        const textNode = document.createTextNode("홍길동");
+        newH.appendChild(textNode);
+        document.body.appendChild(newH);
+
+        textNode.value = "";
+
+        const items = document.querySelectorAll("h3");
+        for (let i = 0; i < items.length; i++) {
+          items[i].addEventListener("click", function () {
+            if (this.parentNode) {
+              this.parentNode.removeChild(this);
+            }
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
